@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-md-center text-center">
+      <div class="col-md-12">
+        <br>
+        <br>  
+        <h2>D3Times</h2>
+        <br>
+        <p>An interactive look at health risks facing particular demographics by each state.</p>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div id="scatter">
+          <!-- our chart here -->
+        </div>
+        
+        <small>Data retrieved from <a href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml" target="_blank">2014 ACS 1-year estimates</a></small>.
+      </div>
+    </div>
+    <br> 
+    <div class="row text-left">
+      <div class="col-md-12">
+        <div class="article">
+          <h2><i class="fas fa-heartbeat"></i> Correlations Between Health Risks and Poverty, Age, Income</h2>
+          <br>
+  
+          <h5><strong>Health Risks and Poverty</strong></h5>
+          <p>The data shows that as the percentage of poverty increases, the proportion of people who lack healthcare increases. Poverty may be a critical reason why there is a lack of access of healthcare across the US (or vice versa). </p>
+
+          <h5><strong>Health Risks and Age</strong></h5>
+          <p>Most of the data is clustered at the center of the chart, which indicates that the average age generally falls at 36-40 in each state across the US, and that age does not appear to be an important factor when considering if a person has access to healthcare. It is likely that other factors, such as income and poverty, are stronger determinants of health risks.</p>
+
+          <h5><strong>Health Risks and Income</strong></h5>
+          <p>There is no definitive pattern between household income and lack of healthcare. It is interesting to note that there is approximately 10-20% of people who lack healthcare, regardless of average income.</p>
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- Footer-->
+  <div id="footer">
+      <div class="container-fluid text-center">
+          <div class="row">
+            <div class="col-md-12">
+                <p class="p-footer" style="display: inline">
+                    <img src="https://media.licdn.com/dms/image/C5103AQGPpuUFDPryEw/profile-displayphoto-shrink_100_100/0?e=1563408000&amp;v=beta&amp;t=qF53RUUcZum6LoMBeTir6blA2BefhTniSzwtNdCeHgI" class="footer-image" alt="Ying Li, Ph.D." height="24" width="24">&nbsp; Made by ying with <i class="fas fa-heart" style="font-size: 12px;"></i>
+                </p>
+            </div>
+          </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
